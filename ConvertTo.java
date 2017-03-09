@@ -44,4 +44,10 @@ public final class ConvertTo {
         }
         return out;
     }
+    public static int blen(String in) {
+        return in.length() * Character.BYTES;
+    }
+    public static int blen(char[] in) {
+        return in.length * Character.BYTES;
+    }
 }
